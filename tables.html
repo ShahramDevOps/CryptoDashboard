@@ -21,8 +21,6 @@
 </head>
 
 <body>
- 
-
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path
@@ -128,13 +126,24 @@
     </button>
     <div class="container-fluid">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>Shahram</strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow ir-font">
+            <li><a class="dropdown-item" href="#">پروفایل</a></li>
+            <li><a class="dropdown-item" href="#">تنظیمــات</a></li>
+            <li><a class="dropdown-item" href="#">امنیت</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">خروج از حساب</a></li>
+          </ul>
+        </div>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 noneBg">
           <li><a href="#" class="nav-link px-2 text-secondary">Chart</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Ideas</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Prics</a></li>
@@ -157,7 +166,7 @@
   <div class="b-example-divider b-example-hr"></div>
   <main class="d-flex flex-nowrap">
 
-    <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 4.5rem;">
+    <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 3.5rem;">
       <!-- <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
         data-bs-placement="right">
         <svg class="bi pe-none" width="40" height="32">
@@ -169,7 +178,7 @@
         <li class="nav-item">
           <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Home"
             data-bs-toggle="tooltip" data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home">
+            <svg class="bi pe-none" width="18" height="18" role="img" aria-label="Home">
               <use xlink:href="#home" />
             </svg>
           </a>
@@ -177,7 +186,7 @@
         <li>
           <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Dashboard" data-bs-toggle="tooltip"
             data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard">
+            <svg class="bi pe-none" width="18" height="18" role="img" aria-label="Dashboard">
               <use xlink:href="#speedometer2" />
             </svg>
           </a>
@@ -185,7 +194,7 @@
         <li>
           <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-toggle="tooltip"
             data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders">
+            <svg class="bi pe-none" width="18" height="18" role="img" aria-label="Orders">
               <use xlink:href="#table" />
             </svg>
           </a>
@@ -193,7 +202,7 @@
         <li>
           <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Products" data-bs-toggle="tooltip"
             data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products">
+            <svg class="bi pe-none" width="18" height="18" role="img" aria-label="Products">
               <use xlink:href="#grid" />
             </svg>
           </a>
@@ -201,7 +210,7 @@
         <li>
           <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-toggle="tooltip"
             data-bs-placement="right">
-            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers">
+            <svg class="bi pe-none" width="18" height="18" role="img" aria-label="Customers">
               <use xlink:href="#people-circle" />
             </svg>
           </a>
@@ -212,11 +221,13 @@
     <div class="b-example-divider b-example-vr"></div>
 
     <div class="content">
+      <!-- Start Content -->
+            
       <div class="table-responsive small">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col" style="max-width: 30px;">#</th>
               <th scope="col">Coin</th>
               <th scope="col">Count</th>
               <th scope="col">Price</th>
@@ -226,6 +237,7 @@
           </thead>
           <tbody>
             <tr>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/4caf2b16a0174e26a3482cea69c34cba.png"/></td>
               <td>BTC</td>
               <td>2</td>
               <td>37500</td>
@@ -241,112 +253,163 @@
                38%</td>
             </tr>
             <tr>
-              <td>1,002</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-              <td>layout</td>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/604ae4533d9f4ad09a489905cce617c2.png"/></td>
+              <td>ETH</td>
+              <td>13</td>
+              <td>1950</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-short green" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                2%</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short red" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+               38%</td>
             </tr>
             <tr>
-              <td>1,003</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-              <td>tabular</td>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/2701173b1b7740f286939659359e225c.png"/></td>
+              <td>ADA</td>
+              <td>1250</td>
+              <td>0.40</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-short green" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                2%</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short red" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+               38%</td>
             </tr>
             <tr>
-              <td>1,003</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-              <td>data</td>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/5ed65416963e4e57998a3c302da8936e.png"/></td>
+              <td>USDT</td>
+              <td>800</td>
+              <td>1</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-short green" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                2%</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short red" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+               38%</td>
             </tr>
             <tr>
-              <td>1,004</td>
-              <td>text</td>
-              <td>random</td>
-              <td>layout</td>
-              <td>dashboard</td>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/63e240f3047f41c791796784bc719f63.png"/></td>
+              <td>DOGE</td>
+              <td>25000</td>
+              <td>0.05</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-short green" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                2%</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short red" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+               38%</td>
             </tr>
             <tr>
-              <td>1,005</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-              <td>placeholder</td>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/777e9aacba2c4284a4c7abeaf87b8256.png"/></td>
+              <td>SOL</td>
+              <td>30</td>
+              <td>86.5</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-short green" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                2%</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short red" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+               38%</td>
             </tr>
             <tr>
-              <td>1,006</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-              <td>data</td>
+              <td><img width="20" height="20" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/f32f9586011f4358825c71a0f1a2981d.png"/></td>
+              <td>FTM</td>
+              <td>2014</td>
+              <td>0.32515</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-short green" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                2%</td>
+              <td>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-short red" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+               38%</td>
             </tr>
           </tbody>
         </table>
       </div>
+      
+      <!-- End Content -->
     </div>
     <div class="b-example-divider b-example-vr"></div>
     <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" id="sidebarTransform">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi pe-none me-2" width="40" height="32">
+        <svg class="bi pe-none me-2" width="20" height="16">
           <use xlink:href="#bootstrap" />
         </svg>
-        <span class="fs-4">Sidebar</span>
+        <span class="fs-6">Sidebar</span>
       </a>
       <hr>
-      <ul class="nav nav-pills flex-column mb-auto">
+      <ul class="nav nav-pills flex-column mb-auto ir-font right-style">
         <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">
-            <svg class="bi pe-none me-2" width="16" height="16">
+          <a href="#" class="nav-link nav-border py-3 active" aria-current="page">
+            <!-- <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
-            </svg>
-            Home
+            </svg> -->
+            کیف پول لجــر          <span class="red" style="float: left;">633 $</span>
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#speedometer2" />
-            </svg>
-            Dashboard
+          <a href="#" class="nav-link nav-border py-3" aria-current="page">
+            <!-- <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#home" />
+            </svg> -->
+            کیف پول تراست والت          <span class="red" style="float: left;">633 $</span>
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#table" />
-            </svg>
-            Orders
+          <a href="#" class="nav-link nav-border py-3" aria-current="page">
+            <!-- <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#home" />
+            </svg> -->
+            کیف پول متامسک          <span style="float: left;">633 $</span>
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#grid" />
-            </svg>
-            Products
+          <a href="#" class="nav-link nav-border py-3" aria-current="page">
+            <!-- <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#home" />
+            </svg> -->
+            کیف پول شهرام          <span style="float: left;">633 $</span>
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link link-body-emphasis">
-            <svg class="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle" />
-            </svg>
-            Customers
+          <a href="#" class="nav-link nav-border py-3" aria-current="page">
+            <!-- <svg class="bi pe-none me-2" width="16" height="16">
+              <use xlink:href="#home" />
+            </svg> -->
+            کیف پول رضا          <span style="float: left;">633 $</span>
           </a>
         </li>
       </ul>
-      <hr>
-
     </div>
-
-
 
   </main>
   <script src="wwwroot/assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="wwwroot/assets/js/sidebars.js"></script>
-
 
   <script>
     const sidebar = document.getElementById('sidebarTransform');

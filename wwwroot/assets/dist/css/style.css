@@ -166,15 +166,20 @@
      transform: translateX(0);
  }
 
+ #sidebarTransform li {
+     font-family: IRANSansBold;
+ }
+
+ .fs-40 {
+     font-size: 40px;
+ }
 
  .green {
-     font-size: 40px;
      font-weight: bold;
      color: #00e1f6;
  }
 
  .red {
-     font-size: 40px;
      font-weight: bold;
      color: #f623f6;
  }
@@ -190,4 +195,12 @@
 
  .noneBg li:hover {
      background-color: unset !important;
+ }
+
+ .b-example-vr {
+     width: 1rem
+ }
+
+ .nav-border {
+     border-bottom: 1px solid #484849;
  }
