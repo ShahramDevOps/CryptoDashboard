@@ -2,7 +2,8 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-  <script src="wwwroot/assets/js/color-modes.js"></script>
+  <script src="wwwroot/assets/dist/js/color-modes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
   <link href="wwwroot/assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="wwwroot/assets/dist/css/style.css" rel="stylesheet">
+  <link href="wwwroot/assets/dist/css/mobile.css" rel="stylesheet">
   <link href="wwwroot/assets/dist/css/cardStyle.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -42,7 +44,7 @@
     </symbol>
   </svg>
 
-  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+  <div class="hidden-min-500 dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
       aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
       <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
@@ -126,7 +128,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="container-fluid">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
         <div class="dropdown">
           <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -145,36 +147,19 @@
         </div>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 noneBg">
-          <li><a href="#" class="nav-link px-2 text-secondary">Chart</a></li>
+          <!-- <li><a href="#" class="nav-link px-2 text-secondary">Chart</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Ideas</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Prics</a></li>
           <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li> -->
         </ul>
 
-        <!--  <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-            aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div> -->
       </div>
     </div>
   </header>
   <div class="b-example-divider b-example-hr"></div>
   <main class="d-flex flex-nowrap">
-
-    <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 3.5rem;">
-      <!-- <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
-        data-bs-placement="right">
-        <svg class="bi pe-none" width="40" height="32">
-          <use xlink:href="#bootstrap" />
-        </svg>
-        <span class="visually-hidden">Icon-only</span>
-      </a> -->
+     <div class="hidden-min-768 d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 3.5rem;">
       <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
           <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Home"
@@ -217,12 +202,12 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> 
 
-    <div class="b-example-divider b-example-vr"></div>
+    <div class="hidden-min-768 b-example-divider b-example-vr"></div>
 
     <div class="content">
-
+      <!-- Start Content-->
       <div class="row bg-dark mt-3 br-7 pb-3">
         <div class="col-md-4 col-sm-12">
           <div class="card dark">
@@ -299,6 +284,7 @@
         </script>
       </div> -->
       <!-- TradingView Widget END -->
+      <!-- End Content -->
     </div>
     <div class="b-example-divider b-example-vr"></div>
     <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" id="sidebarTransform">
@@ -315,7 +301,7 @@
             <!-- <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg> -->
-            منو اول          <span class="red" style="float: left;">7</span>
+            منو اول <span class="red" style="float: left;">7</span>
           </a>
         </li>
         <li>
@@ -323,7 +309,7 @@
             <!-- <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg> -->
-            منو دوم سایت          <span class="red" style="float: left;">0</span>
+            منو دوم سایت <span class="red" style="float: left;">0</span>
           </a>
         </li>
         <li>
@@ -331,7 +317,7 @@
             <!-- <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg> -->
-            دوره های آموزشی          <span style="float: left;">8</span>
+            دوره های آموزشی <span style="float: left;">8</span>
           </a>
         </li>
         <li>
@@ -339,7 +325,7 @@
             <!-- <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg> -->
-            لیست کاربارن سایت          <span style="float: left;">1</span>
+            لیست کاربارن سایت <span style="float: left;">1</span>
           </a>
         </li>
         <li>
@@ -347,24 +333,57 @@
             <!-- <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg> -->
-            منوهای سایت          <span style="float: left;">0</span>
+            منوهای سایت <span style="float: left;">0</span>
           </a>
         </li>
       </ul>
     </div>
 
   </main>
+  
+  <footer>
+    <div class="text-bg-dark border-top">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small ir-font">
+            <li>
+              <a href="#" class="nav-link text-secondary">
+                <svg class="bi d-block mx-auto mb-1" width="20" height="20">
+                  <use xlink:href="#home"></use>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="20" height="20">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="20" height="20">
+                  <use xlink:href="#table"></use>
+                </svg>
+                Orders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="20" height="20">
+                  <use xlink:href="#grid"></use>
+                </svg>
+                Products
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </footer>
   <script src="wwwroot/assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="wwwroot/assets/js/sidebars.js"></script>
-
-  <script>
-    const sidebar = document.getElementById('sidebarTransform');
-    const button = document.getElementById('btnTogggle');
-
-    button.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-    });
-  </script>
+  <script src="wwwroot/assets/dist/js/sidebars.js"></script>
+  <script src="wwwroot/assets/dist/js/site.js"></script>
 </body>
 
 </html>

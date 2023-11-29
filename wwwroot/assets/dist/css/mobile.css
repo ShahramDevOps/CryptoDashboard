@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+
+    main {
+        height: calc(100vh - 150px) !important;
+    }
+
+    #sidebarTransform {
+        margin-right: -296px;
+    }
+
+    #sidebarTransform.active {
+        margin-right: 0 !important;
+    }
+
+    .dropdown {
+        padding-right: none !important;
+    }
+
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem !important;
+    }
+
+    .hidden-min-768 {
+        display: none !important;
+    }
+}
+@media (max-width: 500px) {
+    .hidden-min-500 {
+        display: none !important;
+    }
+}

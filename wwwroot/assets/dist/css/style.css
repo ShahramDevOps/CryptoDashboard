@@ -14,25 +14,10 @@
          url('fonts/woff2/IRANSansX-Regular.woff2') format('woff2');
  }
 
- @media (max-width: 768px) {
-     #sidebarTransform {
-         margin-right: -280px;
+ @media (min-width: 768px) {
+     main {
+         height: calc(100vh - 75px) !important;
      }
-
-     #sidebarTransform.active {
-         margin-right: 0 !important;
-     }
-
-     .dropdown {
-         padding-right: none;
-     }
-     .bd-placeholder-img-lg {
-         font-size: 3.5rem;
-     }
- }
-
- main {
-     height: calc(100vh - 75px) !important;
  }
 
  .ir-font {
