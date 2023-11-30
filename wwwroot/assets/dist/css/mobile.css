@@ -1,15 +1,8 @@
 @media (max-width: 768px) {
 
     main {
-        height: calc(100vh - 150px) !important;
-    }
-
-    #sidebarTransform {
-        margin-right: -296px;
-    }
-
-    #sidebarTransform.active {
-        margin-right: 0 !important;
+        height: calc(100vh - 133px) !important;
+        position: relative;
     }
 
     .dropdown {
@@ -20,12 +13,31 @@
         font-size: 3.5rem !important;
     }
 
-    .hidden-min-768 {
+    .hidden-max-768 {
         display: none !important;
     }
+
+    #sidebarTransform {
+        position: absolute;
+        height: 100vh;
+        right: -280px;
+        z-index: 10;
+        transition: all 0.5s ease-in-out !important;
+        transform: translateX(0) !important;;
+    }
+
+    #sidebarTransform.active {
+        margin-right: 0 !important;
+        right: 0;
+        transition: all 0.5s ease-in-out !important;
+        transform: translateX(0) !important;
+    }
 }
+
+
+
 @media (max-width: 500px) {
-    .hidden-min-500 {
+    .hidden-max-500 {
         display: none !important;
     }
 }
