@@ -7,10 +7,8 @@ axios.get('https://localhost:44338/api/ClientAppProcessFlowActions/GetAll', {
         'Authorization': `Bearer ${jwtToken}`,
         'Content-Type': 'application/json',  // You might need to adjust the content type based on your API requirements
     },
-})
-    .then(response => {
-        console.log('Data:', response.data);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+}).then(response => {
+    console.log('Data:', response.data);
+}).catch(error => {
+    console.error('Error:', error);
+});
