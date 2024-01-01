@@ -114,8 +114,8 @@ updateTheme("green");
 
 document.getElementById('shapes').classList.remove('hidden');
 document.getElementById('actions-wrapper').classList.remove('hidden');
-document.querySelector('.container').classList.remove('hidden');
+document.querySelector('.container-lottery').classList.remove('hidden');
 
 document.getElementById('shapes').classList.add('hidden');
 document.getElementById('actions-wrapper').classList.add('hidden');
-document.querySelector('.container').classList.add('hidden');
+document.querySelector('.container-lottery').classList.add('hidden');
