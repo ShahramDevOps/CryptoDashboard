@@ -197,3 +197,8 @@
  .nav-border {
      border-bottom: 1px solid #484849;
  }
+ 
+ a.nav-link.nav-border.py-1.active {
+    height: 70px;
+    padding-top: 10px !important;
+}
